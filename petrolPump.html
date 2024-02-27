@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table with Dropdown</title>
+<style>
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid black; /* Set border color to black */
+  }
+  th, td {
+    border: 1px solid black; /* Set border color to black */
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    /* background-color: #f2f2f2; */
+  }
+  select {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .table-heading {
+    text-align: center;
+    font-weight: bold;
+  }
+
+  .label-dropdown-container {
+    text-align: left; /* Align the label and dropdown to the left */
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+</style>
+</head>
+<body>
+
+
+<div class="label-dropdown-container">
+    <label for="paic-dropdown">03AAACP99051ZL:</label>
+    <select id="paic-dropdown">
+      <option value="monthly">Mega Food Park </option>
+      <option value="quarterly"> Petrol Pump 
+    </option>
+    </select>
+  </div>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" class="table-heading">PETROL PUMP </th>
+    </tr>
+    <tr>
+      <th>REVENUE/SALES</th>
+      <th>EXPENSES/PURCHASES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sale of HSD</td>
+      <td>Purchase of HSD</td>
+    </tr>
+    <tr>
+      <td>Sale of Oils/Lubricants</td>
+      <td>Purchase of Oils/Lubricants</td>
+    </tr>
+    <tr>
+      <td>Sale of MS</td>
+      <td>Purchase of MS</td>
+    </tr>
+    <tr>
+      <td>Sale of MS-XP</td>
+      <td>Purchase of MS-XP</td>
+    </tr>
+    <tr>
+      <td>Other Income</td>
+      <td>Personnel Expenses</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Administrative Charges</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td>Other Charges</td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table with Dropdown</title>
+<style>
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid black; /* Set border color to black */
+  }
+  th, td {
+    border: 1px solid black; /* Set border color to black */
+    padding: 8px;
+    text-align: center;
+  }
+  th {
+    /* background-color: #f2f2f2; */
+  }
+  select {
+    padding: 5px;
+    border-radius: 5px;
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+  .table-heading {
+    text-align: center;
+    font-weight: bold;
+  }
+  .label-dropdown-container {
+    text-align: left; /* Align the label and dropdown to the left */
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+</style>
+</head>
+<body>
+
+<div class="label-dropdown-container">
+  <label for="paic-dropdown">03AAACP99052ZK:</label>
+  <select id="paic-dropdown">
+    <option value="monthly">Wheat Seed/ Paddy</option>
+    <option value="quarterly"> Fertilizers, Jantar</option>
+    <option value="yearly">Gypsum and Silage </option>
+  </select>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="4" class="table-heading">WHEAT SEED/ PADDY</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td></td>
+      <td>Purchase</td>
+      <td>Sale</td>
+      <td>Expenditure</td>
+      <td>Income</td>
+    </tr>
+    <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+    </tr>
+  </tbody>
+</table>
+
+</body>
+</html>
