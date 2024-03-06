@@ -37,6 +37,8 @@
 
 <div class="label-dropdown-container">
   <label for="paic-dropdown">03AAACP99052ZK:</label>
+ 
+
   <select id="paic-dropdown" onchange="navigateToPage(this)">
     <option value="">Select...</option>
     <option value="wheatSeedPaddy.html">Wheat Seed/ Paddy</option>
@@ -49,7 +51,7 @@
 <table>
   <thead>
     <tr>
-      <th colspan="4" class="table-heading">WHEAT SEED/ PADDY</th>
+      <th colspan="4" class="table-heading">FERTILIZER</th>
     </tr>
   </thead>
   <tbody>
@@ -70,12 +72,12 @@
   </tbody>
 </table>
 <script>
-  function navigateToPage(select) {
-    var value = select.value; // Get the selected option value
-    if (value) { // Check if a value is selected
-      window.location.href = value; // Navigate to the selected page
+    function navigateToPage(select) {
+      var value = select.value; // Get the selected option value
+      if (value) { // Check if a value is selected
+        window.location.href = value; // Navigate to the selected page
+      }
     }
-  }
-</script>
+  </script>
 </body>
 </html>

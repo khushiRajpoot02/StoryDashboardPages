@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!-- <!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8">
@@ -39,8 +39,8 @@
 <div class="label-dropdown-container">
     <label for="paic-dropdown">03AAACP99051ZL:</label>
     <select id="paic-dropdown">
-      <option value="monthly">Mega Food Park </option>
-      <option value="quarterly"> Petrol Pump 
+      <option value="monthly"><a href="petrolPump.html">Mega Food</a> </option>
+      <option value="quarterly"><a href="petrolPump.html">Petrol Pump </a> 
     </option>
     </select>
   </div>
@@ -70,6 +70,90 @@
     </tr>
   </tbody>
 </table>
+
+</body>
+</html> -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Table with Dropdown</title>
+<style>
+  table {
+    width: 80%;
+    border-collapse: collapse;
+    border: 2px solid black; /* Set border color to black */
+  }
+  th, td {
+    border: 1px solid black; /* Set border color to black */
+    padding: 8px;
+    text-align: center;
+  }
+  select {
+    padding: 5px;
+    border-radius: 5px;
+  }
+  .table-heading {
+    text-align: center;
+    font-weight: bold;
+  }
+  .label-dropdown-container {
+    text-align: left; /* Align the label and dropdown to the left */
+    margin-bottom: 10px; /* Add margin at the bottom */
+  }
+</style>
+</head>
+<body>
+
+<div class="label-dropdown-container">
+    <label for="paic-dropdown">03AAACP99051ZL:</label>
+    <select id="paic-dropdown" onchange="handleSelectChange()">
+      <option value="">Please Select</option>
+      <option value="megaFoodPark.html">Mega Food</option>
+      <option value="petrolPump.html">Petrol Pump</option>
+    </select>
+</div>
+
+<table>
+  <thead>
+    <tr>
+      <th colspan="2" class="table-heading">MEGA FOOD PARK</th>
+    </tr>
+    <tr>
+      <th>REVENUE/ SALES</th>
+      <th>EXPENSES/ PURHCASES</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>Sale of Plot</td>
+      <td>Personnel Expenses</td>
+    </tr>
+    <tr>
+      <td>Sale of Services</td>
+      <td>Administrative Charges</td>
+    </tr>
+    <tr>
+      <td>Other Income</td>
+      <td>Other Charges</td>
+    </tr>
+  </tbody>
+</table>
+
+<script>
+function handleSelectChange() {
+  var select = document.getElementById("paic-dropdown");
+  var value = select.value;
+
+  // Check if a value is selected
+  if (value) {
+    // Navigate to the selected page
+    window.location.href = value;
+  }
+}
+</script>
 
 </body>
 </html>
